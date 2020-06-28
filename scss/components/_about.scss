@@ -1,0 +1,48 @@
+.main__about{
+    @include media(tablet){
+        @include grid-column(1,2);
+        @include grid-row(1,2);
+        width: 40vw;
+        padding: 0px;
+        position: relative;
+        justify-self: center;
+        align-self: center;
+
+    }
+    width: 90%;
+    margin: 0 auto;
+    background-image: url("../images/pattern-quotes.svg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 80px;
+    padding: 0px 35px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 500;
+    .testimonial{
+        padding-top: 35px;
+        
+        &__title{
+            margin-top: 20px;
+            font-weight: 700;
+        }
+ 
+    }
+       
+ 
+}
+.testimonial__final{
+    margin-top: 30px;   
+    height:15vh;
+    width: 100vw;
+    background-image: url("../images/pattern-curve.svg");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: contain;
+    @include media(tablet){
+        margin-top: 0;
+        @include grid-column(1,3);
+        @include grid-row(2,3);
+    }
+
+}
