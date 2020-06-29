@@ -11,7 +11,14 @@ body {
 body p {
   color: #202046;
 }
-
+@media only screen and (min-width: 768px) {
+body{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+}
 /* Media Queries Mixin
 **********************/
 .imagenes .main__buttons {
@@ -24,15 +31,16 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  max-width: 1440px;
 }
 @media only screen and (min-width: 768px) {
   main {
     display: grid;
-    grid-template-columns: 30% 30%;
+    grid-template-columns: 32% 40%;
     grid-template-rows: 1fr 30%;
     justify-content: center;
     align-content: center;
-    max-width: 1440px;
+
   }
 }
 
@@ -137,4 +145,10 @@ main {
     -ms-grid-row-span: 1;
     grid-row: 2/3;
   }
+}
+.disabled{
+  display: none;
+}
+.active{
+  display: block;
 }
